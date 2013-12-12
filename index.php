@@ -1,21 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>CV Jesus Luis Vazquez Montañez</title>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-			<meta name="keywords" content="WOW Slider, Slideshow jQuery, Wordpress Gallery" />
-			<meta name="description" content="WOWSlider created with WOW Slider, a free wizard program that helps you easily generate beautiful web slideshow" />
-	<!-- Start WOWSlider.com HEAD section -->
-		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-			<script type="text/javascript" src="engine1/jquery.js"></script>
 
-	<!-- End WOWSlider.com HEAD section -->
+		<link type="text/css" rel="stylesheet" href="estilo.css"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+
+		CONTADOR DE VISITAS</br>
+		<a href="http://freehitcountercode.com/">
+		<img border="0" src="http://www.freehitcountercode.com/counter.php?b=00ffff&r=000000&f=000000&unique=1&start=0" width="120" height="30" /></a>
+
+
+
 <?php 
 error_reporting(E_ERROR | E_PARSE);
 $errors = "";
-$myemail = 'evilkanival55@hotmail.com';//<-----Put Your email address here.
+$myemail = 'jesus-vazquez291@hotmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['message']))
@@ -46,135 +48,220 @@ if( empty($errors))
 	$headers .= "Reply-To: $email_address";
 	
 	mail($to,$email_subject,$email_body,$headers);
-	//redirect to the 'thank you' page
-	header('Location: contact-form-thank-you.html');
+	header('Location: ComentarioEnviado.html');
+	exit;
 } 
 ?>
 
+
+
+
+
 </head>
-<body style="background-color:#d7d7d7">
-	<div id="header">
-		<p id="name">Jesus Luis Vazquez Montañez </p>
-		
+<body>
+
+	<div class="titulo">
+		CURRICULUM VITAE</br>
+		JESUS LUIS VAZQUEZ MONTAÑEZ
 	</div>
-		<div class="left">
-			 <a href="#Nombre">Nombre</a></br> 
-			 <a href="#Experiencia">Experiencia</a> </br>
-			 <a href="#Habilidades">Habilidades</a> </br>
-			 <a href="#Educacion">Educacion</a></br>
-			 <a href="#Lenguajes">Lenguajes</a></br> 
-			 <a href="#Fotos">Fotos</a></br> 
-			 <a href="#Contacto">Contacto</a></br>
-		</div>
-		<div class="right">
-			<a name="Nombre"></a>
-				<h3>Nombre</H3>
-					<H4>Jesus Luis Vazquez Montañez</H4>
+
+
+	<div id="header">
+		<tr>
+			<td>
+				<ul>
+			<a href="#Datos">Datos</a> |
+			<a href="#Experiencia">Experiencia</a> |
+			<a href="#Habilidades">Habilidades</a> |
+			<a href="#Educacion">Educacion</a> |
+			<a href="#Lenguajes">Lenguajes</a> |
+			<a href="#Fotos">Fotos</a> |
+			<a href="#Contacto">Contacto</a> 
+				</ul>
+			</td>
+			<td>
+				<img src="">
+			</td>
+		</tr>
+	</div>
+
+
+	<div class="datos">
+		<a name="Datos"></a>
+			<h4>Datos Personales</h4>
+			<table>
+				<tr>
+					<td>
 						<ul>
+							<strong> Nombre:</strong>Jesus Luis Vazquez Montañez</br>
 							<strong> Fecha de Nacimiento:</strong>29 Agosto 1990</br>
 							<strong> Lugar de Nacimiento:</strong>Tijuana, Baja California</br>
 							<strong> Direccion:</strong>Rafael Buelna #4064 Fracc. Soler</br> 
 							<strong> Codigo Postal:</strong>22105</br>
-							<strong> Numero Casa:</strong> (664) 904-10-91</br>
+							<strong> Numero Casa:</strong> 904-10-91</br>
 							<strong> Numero Celular:</strong> 664 335-74-80</br>
-							<strong> Email:</strong><a href="mailto:jesus-vazquez291@hotmail.com"><id="email">evilkanival55@hotmail.com</a></br>
+							<strong> Email:</strong><a href="mailto:jesus-vazquez291@hotmail.com"><id="email">jesus-vazquez291@hotmail.com</a></br>
 							<strong> Estado Civil: </strong>Soltero</br>
 						</ul>
-		
-			<a name="Experiencia"></a>
+					</td>
+					<td>
+						<img border="0" src="../ProyectoFinal/Me.jpg" width="120" height="140" >
+					</td>	
+				</tr>
+			</table>
+	</div>
+
+
+	<hr width=100>
+	<div class="experiencia">
+		<a name="Experiencia"></a>
 				<h4>Experiencia</h4>
-					<ul>
-						<li><strong>Border Assembly</strong></br>
-							Project Coordinator
+				<ul>
+				<li>Servicio Social: Fundacion Castro-Limon</li>
+				<li>AutoServicio Aries</li>
+				<li>Club Regina Vacation Club</li>
+				<li>Practicas Profesionales: AutoServicio Aries</li>
+				</ul>
+	</div>
+
+
+	<hr width=100>
+	<div class="habilidades">
+		<a name="Habilidades"></a>
+			<h4>Habilidades</h4>
+			<table>
+				<tr>
+					<td>
+						<ul>
+							<li>Creacion de Paginas Web</li>
+							<li>Desarrollo de Bases de datos</li>
+							<li>Creacion de programas personalizados</li>
+							<li>Reparacion de equipos de computo</li>			
+						</ul>
+					</td>
+					<td>
+						<p><strong>Actividades de oficina:</strong></p>
 							<ul>
-								<li>Logistics Cordination</li>	
-								<li>Work Order Entry</li> 
-								<li>Coordination for Account Receivables</li>
-								<li>Implementation of New Tecnologies</li>
+								<li>Soporte Tecnico via Remote desktop</li>
+								<li>Uso de Computadora</li>
+								<li>Mantenimiento de Redes</li>
+								<li>Mantenimiento de Software</li>
+								<li>Uso de Copiadora</li> 
 							</ul>
-				</ul>	
-		<hr>
-			<a name="Habilidades"></a>
-				<h4>Habilidades</h4>
-					<p><strong>Lenguajes:</strong> C#, Java, CSS, Android</p>
-					<p><strong>Frameworks:</strong> .NET, Play</p>
-					<p><strong>Actividades de oficina:</strong>
-						<ul>
-							<li>Soporte Tecnico via Remote desktop</li>
-							<li>Uso de Computadora</li>
-							<li>Mantenimiento de Redes</li>
-							<li>Mantenimiento de Software</li>
-							<li>Uso de Copiadora</li> 
-						</ul>
-		<hr>
-			<a name="Educacion"></a>
-				<h4>Educacion</h4>
-					<li><strong>Primaria</strong></br>
-						
-						<ul>
-							<li>Colegio CADI (1996 - 1998)</br>
-    							Colegio Abraham Castellanos (1998 - 2002)
- 							</li>
-						</ul>
-					</li>
+					</td>
+					<td>		
+						<p><strong>Administradores de Base de Datos</strong></p>
+							<ul>
+								<li>Managment Studio</li>
+								<li>MySQL</li>
+							</ul>
+					</td>
+				</tr>
 					
-					<li><strong>Secundaria</strong></br>
+					<td>
+						<p><strong>Lenguajes:</strong></p>
+							<ul>
+								<li>C#</li>
+								<li>Java</li>
+								<li>C</li>
+								<li>Objective C</li>
+								<li>Android</li>
+								<li>JavaScirpt</li>
+								<li>PHP</li>
+								<li>Visual Basic</li>
+							</ul>
+					</td>
+					<td>
+						<p><strong>Frameworks:</strong></p>
 						<ul>
-						Instituto Cuauhtlatohuac (2002 - 2005)
-					</ul>
-					</li>
+								<li>.NET</li>
+								<li>Play</li>
+					</td>
+				</tr>
+			</table>
+	</div>
 
-					<li><strong>Preparatoria</strong></br>
-						<ul>
-							<li>Colegio Juan de dios Fernández  (2005 - 2007)</br>
-							Colegio CADI (2007 - 2008)</li>
-						</ul>
-					</li>
-					<li><strong>Universidad</strong></br>
-						<ul>
-							<li>CESUN Universidad, Ingeniería en Desarrollo de Software (2010 – a la fecha)</li>
-						</ul>
-					</li>
 
-		<hr>
-			<a name="Lenguajes"></a>
-				<h4>Lenguajes</h4>
+
+	<hr width=100>
+	<div class="educacion">
+		<a name="Educacion"></a>
+			<h4>Educacion</h4>
+				<li><strong>Primaria</strong></br>
 					<ul>
-						<li>Español (Nativo)</li>
-						<li>Ingles 75% (Hablado/Escrito)</li>
+						<li>Colegio CADI (1996 - 1998)</li>
+    					<li>Colegio Abraham Castellanos (1998 - 2002)</li>
 					</ul>
-		<hr>
-			<a name="Fotos"></a>
-				<h4>Fotos</h4>
-					
+				</li>
+				<li><strong>Secundaria</strong></br>
+					<ul>
+						<li>Instituto Cuauhtlatohuac (2002 - 2005)</li>
+					</ul>
+				</li>
+				<li><strong>Preparatoria</strong></br>
+					<ul>
+						<li>Colegio Juan de dios Fernández  (2005 - 2007)</li>
+						<li>Colegio CADI (2007 - 2008)</li>
+					</ul>
+				</li>
+				<li><strong>Universidad</strong></br>
+					<ul>
+						<li>CESUN Universidad, Ingeniería en Desarrollo de Software (2010 – a la fecha)</li>
+					</ul>
+				</li>
+	</div>
+
+
+
+	<hr width=100>
+	<div class="lenguajes">
+		<a name="Lenguajes"></a>
+			<h4>Lenguajes Hablados</h4>
+				<ul>
+					<li>Español (Nativo)</li>
+					<li>Ingles 75% (Hablado/Escrito)</li>
+					<li>Japones 20 % </li>
+				</ul>
+	</div>
+
+
+
+	<hr width=100>
+	<div class="fotos">
+		<a name="Fotos"></a>
+			<h4>Fotos</h4>		
 			<div id="wowslider-container1">
 				<div class="ws_images">
-					<ul>
-													
+					<ul>							
 						<li><img src="data1/images/f2.jpg" alt="f2" title="f2" id="wows1_2"/></li>
 						<li><img src="data1/images/f3.jpg" alt="f3" title="f3" id="wows1_3"/></li>
 						<li><img src="data1/images/f4.jpg" alt="f4" title="f4" id="wows1_4"/></li>
 					</ul>
 				</div>
-				<div class="ws_bullets">
-					<div>
-						
+					<div class="ws_bullets">
+						<div>	
 						<a href="#" title="f2"><img src="data1/tooltips/f2.jpg" alt="f2"/>2</a>
 						<a href="#" title="f3"><img src="data1/tooltips/f3.jpg" alt="f3"/>3</a>
 						<a href="#" title="f4"><img src="data1/tooltips/f4.jpg" alt="f4"/>4</a>
+						</div>
 					</div>
-				</div>
-				<span class="wsl"><a href="http://wowslider.com">jQuery Gallery</a> by WOWSlider.com v4.8m</span>
-					<div class="ws_shadow">
-					</div>
-				</div>
+						<span class="wsl"><a href="http://wowslider.com">jQuery Gallery</a> by WOWSlider.com v4.8m</span>
+					
+			</div>
 					<script type="text/javascript" src="engine1/wowslider.js"></script>
 					<script type="text/javascript" src="engine1/script.js"></script>
-		<hr>
-				<a name="Contacto"></a>
-				<h4>Contacto</h4>
-					<ul>
-						<?php
+	</div>
+
+
+
+	<hr width=100>
+	<div class="contacto">
+		<a name="Contacto"></a>
+			<h4>Contacto</h4>
+				<ul>
+
+
+	<?php
 $action=$_REQUEST['value'];  
 
 if (!$action=="action")    /* display the contact form */
@@ -190,6 +277,8 @@ if (!$action=="action")    /* display the contact form */
     <textarea name="message" rows="7" cols="30"></textarea></br>
     <input type="submit" value="Enviar"/>
     </form>
+
+
     <?php
     } 
 else                /* send the submitted data */
@@ -201,20 +290,20 @@ else                /* send the submitted data */
         {
         echo "All fields are required, please fill <a href=\"\">the form</a> again.";
         }
-    else{        
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("evilkanival55@hotmail.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
+    
     }  
 ?>
 						
-					</ul>			
-		</div>
-		</div>
-		<div id="footer">
-			&copy; | Jesus Luis Vazquez | Tel: (664) 335-74-80
-		</div>
-	</body>
+				</ul>	
+	</div>		
+		
+	</div>
+
+
+	<div id="footer">
+		&copy;  Jesus Luis Vazquez 
+	</div>
+
+
+</body>
 </html>

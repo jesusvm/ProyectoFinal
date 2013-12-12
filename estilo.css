@@ -1,0 +1,141 @@
+
+.titulo{
+	position: relative;
+	width: 50%;
+	margin-left: 350px;
+	height: 50px;
+	font-family: Calibri;
+	background-color: #6F6D70;
+	text-align: center;
+	color: white;
+}
+
+#header {
+	position: relative;
+	width: 80%;
+	margin-left: 140px; 
+	height: 50px;
+	background-color: #21EDEA;
+	margin-bottom: 2px;
+	font-family:Calibri;
+	font-size: 30px;
+}
+
+
+.datos{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #66E375;
+	font-family: Calibri;
+	font-size: 20px;
+}
+
+
+
+.fotos{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #21EDEA;
+}
+
+.experiencia{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #EB4E2F;
+	font-size: 20px;
+}
+.habilidades{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #21EDEA;
+	font-family: Calibri;
+	font-size: 20px;
+}
+.educacion{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #66E375;
+	font-size: 20px;
+}
+.lenguajes{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #EB4E2F;
+	font-size: 20px;
+}
+.contacto{
+	position: relative;
+	width: 80%;
+	margin-left: 140px;
+	background-color: #66E375;
+}
+
+
+#email{
+	float:right;
+	margin-right: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+	font-family:Calibri;
+	color: #ffffff;
+}
+
+
+
+h4 {
+	margin-left: 50px;
+	font-size: 20px;
+	font-family:Calibri;
+}
+
+ul{
+	list-style-type: circle;
+	font-family:Calibri;
+}
+
+li {
+	list-style-type: circle;
+	font-family:Calibri;
+	margin-left: 20px;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:visited{
+	color:#000000;
+}
+
+a {text-decoration: none; }
+
+div {border-radius: 10px;}
+
+
+#footer {
+	position: relative;
+	height: 50px;
+	background-color: #EB4E2F;
+	clear: both;
+	font-family:Calibri;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+	width: 80%;
+	margin-left: 140px;
+}
+
+#footer p {
+	position: relative;
+	padding-top: 15px;
+}
+
+p{
+	margin-left: 20px;
+}
